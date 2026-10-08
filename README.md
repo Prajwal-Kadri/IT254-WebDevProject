@@ -1,8 +1,25 @@
-# Intrusion Detection System
+# Network Intrusion Detection System
 
- - What is an intrusion detection system?
- > An intrusion detection system is a device or software application that monitors a network or systems for malicious activity or policy violations. Any intrusion activity or violation is typically reported either to an administrator or collected centrally using a security information and event management system.
+Machine-learning experiments and a companion web interface for identifying malicious network connections.
 
+## Project layout
 
-# Web Application
-  - We have implemented a web application that can be downlodaded from the heroku-app branch of the same repository.
+- `KDDCUP99/` — notebook, dataset files, requirements, performance plots, and results
+- `NSL-KDD/` — experiment materials for the NSL-KDD dataset
+
+## Models evaluated
+
+The KDD Cup '99 study compares Gaussian Naive Bayes, Decision Tree, Random Forest, SVM, Logistic Regression, Gradient Boosting, and an artificial neural network. The included report records accuracy and runtime comparisons.
+
+## Run the notebooks
+
+Each dataset folder contains a `main.ipynb` notebook. Install the requirements and run the appropriate notebook:
+
+```bash
+python -m pip install -r KDDCUP99/requirements.txt
+jupyter notebook KDDCUP99/main.ipynb
+```
+
+## Web application
+
+A related Flask deployment using the UNSW-NB15 dataset is available in the [IT254-WebDevProject-vercel](https://github.com/Prajwal-Kadri/IT254-WebDevProject-vercel) repository.
